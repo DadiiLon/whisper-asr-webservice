@@ -22,7 +22,7 @@ class OpenAIWhisperASR(ASRModel):
             ).cuda()
         else:
             self.model = whisper.load_model(
-                name=CONFIG.MODEL_NAME,
+                name="tiny",
                 download_root=CONFIG.MODEL_PATH
             )
 
