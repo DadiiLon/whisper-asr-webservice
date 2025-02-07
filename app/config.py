@@ -15,7 +15,7 @@ class CONFIG:
     DEVICE = os.getenv("ASR_DEVICE", "cuda" if torch.cuda.is_available() else "cpu")
 
     # Model name to use (e.g., "base", "small", etc.)
-    MODEL_NAME = os.getenv("ASR_MODEL", "base")
+    MODEL_NAME = os.getenv("ASR_MODEL", "tiny")
 
     # Path to the model directory
     MODEL_PATH = os.getenv("ASR_MODEL_PATH", os.path.join(os.path.expanduser("~"), ".cache", "whisper"))
